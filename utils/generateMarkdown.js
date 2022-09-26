@@ -64,9 +64,35 @@ You may add Your own copyright statement to Your modifications and may provide a
   }
 }
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
+function generateMarkdown(answers) {
+  return `# ${answers.projectTitle}
+${renderLicenseBadge(answers.projectLicense)}
+## Description
+${answers.projectDescription}
+## Table of Contents 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+## Installation
+${answers.projectInstallation}
+## Usage
+${answers.projectUsage}
+## Credits
+${answers.projectCredits}
+## License
+${answers.projectLicense}
+${renderLicenseLink(answers.projectLicense)}
+${renderLicenseSection(answers.projectLicense)}
+## How to Contribute
+${answers.projectContributing}
+## Tests
+${answers.projectTests}
+## Questions
+If you have any questions, feel free to reach me at : 
+${answers.email}
+To check out more of my work: 
+https://github.com/${answers.username}
 `;
 }
 

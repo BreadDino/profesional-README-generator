@@ -23,12 +23,12 @@ const questions = [
     {
         type: "input", 
         name: "projectDescription", 
-        message: "Provide a short description explaining the what, why, and how of your project",
+        message: "Provide a short description of your project",
     },
     {
         type: "input", 
         name: "projectInstallation", 
-        message: "What are the steps required to install your project? ",
+        message: "What are the steps required to install your project?",
     }, 
     {
         type: "input", 
@@ -49,7 +49,7 @@ const questions = [
     {
         type: "input", 
         name: "projectContributing", 
-        message: "If would like other developers to contribute it, include guidelines for how to do so.",
+        message: "If you would like other developers to contribute it, include guidelines for how to do so.",
     }, 
     {
         type: "input", 
